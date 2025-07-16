@@ -1,9 +1,10 @@
 name: 'Lock Threads'
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
-
+  push:
+    branches: [master]
+  workflow_dispatch:
+  
 permissions:
   issues: write
   pull-requests: write
